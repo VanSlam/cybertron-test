@@ -58,7 +58,9 @@ export default function() {
   const ex1 =
     'Use map to transform the list of auto models to uppercase the first letter of each word'
   const exercise1 = _ => {
-    return []
+    return clients.map(
+      client => client.name.firstName + ' ' + client.name.lastName
+    )
   }
 
   const ex2 = 'Use filter to return a list of cars made between 2001-2004'
